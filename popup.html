@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kolor Pixer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div>
-            <h3>Kolor Pixer</h3>
-            <button id="start-button"><img src="drop.png" style="margin:3px 3px 0 0;height: 13px;transform: rotate(-10deg);"> PICK COLOR</button>
-            <section>
-                <input id="result" value="HEX-COLOR"/>
-                <span id="resultCol">#123456</span>
-            </section>
-            <p>Developed by Manish Parmar ❤️</p>
-        </div>        
-        <script src="script.js" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kolor Pixer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h3>Kolor Pixer</h3>
+        <button id="start-button"><img src="drop.png"
+                style="margin:3px 3px 0 0;height: 13px;transform: rotate(-10deg);"> PICK COLOR</button>
+        <section>
+            <input id="result" value="HEX-COLOR" />
+            <div class="tooltip main-color">
+                <span id="resultCol"><small class="tooltiptext" id="mainColorText">Click to Copy</small><span
+                        id="mainColor">#031150</span></span>
+            </div>
+            <p style="color:black;font-size:18px;text-align: center;font-weight: 600;color:rgb(39, 39, 39)">Similar
+                Shades</p>
+            <aside>
+                <div class="tooltip">
+                    <span id="similar1" class="similar"><small class="tooltiptext" id="myTooltip1">Click to
+                            Copy</small><span id="copy1">#0e51ff</span></span>
+                </div>
+                <div class="tooltip">
+                    <span id="similar2" class="similar"><span class="tooltiptext" id="myTooltip2">Click to
+                            Copy</span><span id="copy2">#030e4b</span></span>
+                </div>
+                <div class="tooltip">
+                    <span id="similar3" class="similar"><span class="tooltiptext" id="myTooltip3">Click to
+                            Copy</span><span id="copy3">#01051a</span></span>
+                </div>
+            </aside>
+        </section>
+        <p class="footer">Developed by Manish Parmar ❤️</p>
+    </div>
+    <script type='text/javascript' src='tinycolor.js'></script>
+    <script src="script.js" async defer></script>
+</body>
+
 </html>
